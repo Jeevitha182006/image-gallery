@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #f4f4f4;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 230px;
+            height: 230px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .section {
+            display: none;}
+            .section {
+    background-color: #edfcb9;  
+    padding: 20px;  
+    border-radius:8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+}
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('nature')">Nature</a>
+        <a href="javascript:void(0)" onclick="showSection('crafts')">Crafts</a>
+        <a href="javascript:void(0)" onclick="showSection('cartoons')">Cartoons</a>
+        <a href="javascript:void(0)" onclick="showSection('flowers')">Flowers</a>
+        <a href="javascript:void(0)" onclick="showSection('mehndi')">Mehndi Designs</a>
+        <a href="javascript:void(0)" onclick="showSection('games')">Games</a>
+    </nav>
+
+    <div id="nature" class="section active">
+        <center><h2>Nature</h2></center>
+        <div class="gallery">
+            
+            <img src="nature1.jpg" alt="Nature 1">
+            <img src="nature2.jpg" alt="Nature 2">
+            <img src="nature3.jpg" alt="Nature 3">
+            <img src="nature4.webp" alt="Nature 4">
+            <img src="nature5.webp" alt="Nature 5">
+            <img src="nature6.jpg" alt="Nature 6">
+            <img src="nature7.jpg" alt="Nature 7">
+            <img src="nature8.jpg" alt="Nature 8">
+            <img src="nature9.jpg" alt="Nature 9">
+            <img src="natue10.jpg" alt="Natue 10">
+        </div>
+    </div>
+
+    <div id="crafts" class="section">
+        <h2>Crafts</h2>
+        <div class="gallery">
+            
+            <img src="craft1.jpg" alt="Craft 1">
+            <img src="craft2.jpg" alt="Craft 2">
+            <img src="craft3.jpg" alt="Craft 3">
+            <img src="craft4.jpg" alt="Craft 4">
+            <img src="craft5.jpg" alt="Craft 5">
+            <img src="craft6.jpg" alt="Craft 6">
+            <img src="craft7.jpg" alt="Craft 7">
+            <img src="craft8.jpg" alt="Craft 8">
+            <img src="craft9.jpg" alt="Craft 9">
+            <img src="craft10.jpg" alt="Craft 10">
+        </div>
+    </div>
+
+    <div id="cartoons" class="section">
+        <center><h2>Cartoons</h2></center>
+        <div class="gallery">
+           
+            <img src="Cartoon1.jpg" alt="Cartoon 1">
+            <img src="Cartoon2.jpg" alt="Cartoon 2">
+            <img src="Cartoon3.jpg" alt="Cartoon 3">
+            <img src="Cartoon4.jpg" alt="Cartoon 4">
+            <img src="Cartoon5.jpg" alt="Cartoon 5">
+            <img src="Cartoon6.jpg" alt="Cartoon 6">
+            <img src="Cartoon7.jpg" alt="Cartoon 7">
+            <img src="Cartoon8.jpg" alt="Cartoon 8">
+            <img src="Cartoon9.jpg" alt="Cartoon 9">
+            <img src="Cartoon10.jpg" alt="Cartoon10.jpg" >
+
+        </div>
+    </div>
+
+    <div id="flowers" class="section">
+        <center><h2>Flowers</h2></center>
+        <div class="gallery">
+            
+            <img src="flower1.jpg" alt="Flower 1">
+            <img src="flower2.jpg" alt="Flower 2">
+            <img src="flower3.jpg" alt="Flower 3">
+            <img src="flower4.jpg" alt="Flower 4">
+            <img src="flower5.jpg" alt="Flower 5">
+            <img src="flower6.jpg" alt="Flower 6">
+            <img src="flower7.jpg" alt="Flower 7">
+            <img src="flower8.jpg" alt="Flower 8">
+            <img src="flower9.jpg" alt="Flower 9">
+            <img src="flower10.jpg" alt="Flower 10">
+        </div>
+    </div>
+
+    <div id="mehndi" class="section">
+        <center><h2>Mehndi Designs</h2></center>
+        <div class="gallery">
+            
+            <img src="mehendi1.jpg" alt="Mehendi 1">
+            <img src="mehendi2.jpg" alt="Mehendi 2">
+            <img src="mehendi3.jpg" alt="Mehendi 3">
+            <img src="mehendi4.jpg" alt="Mehendi 4">
+            <img src="mehendi5.jpg" alt="Mehendi 5">
+            <img src="mehendi6.jpg" alt="Mehendi 6">
+            <img src="mehendi7.jpg" alt="Mehendi 7">
+            <img src="mehendi8.jpg" alt="Mehendi 8">
+            <img src="mehendi9.jpg" alt="Mehendi 9">
+            <img src="mehendi10.jpg" alt="Mehendi 10">
+        </div>
+    </div>
+
+    <div id="games" class="section">
+        <center><h2>Games</h2></center>
+        <div class="gallery">
+             
+            <img src="Games1.jpg" alt="Games 1">
+            <img src="Games2.jpg" alt="Games 2">
+            <img src="Games3.jpg" alt="Games 3">
+            <img src="Games4.jpg" alt="Games 4">
+            <img src="Games5.jpg" alt="Games 5">
+            <img src="Games6.jpg" alt="Games 6">
+            <img src="Games7.jpg" alt="Games 7">
+            <img src="Games8.jpg" alt="Games 8">
+            <img src="Games9.jpg" alt="Games 9">
+            <img src="Games10.jpg" alt="Games 10">
+        </div>
+    </div>
+
+    <script>
+        // Function to show the respective section
+        function showSection(section) {
+            // Hide all sections
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(function(sec) {
+                sec.classList.remove('active');
+            });
+
+            // Show the clicked section
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
+</body>
+</html>
